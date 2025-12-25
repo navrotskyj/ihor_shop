@@ -11,7 +11,7 @@
 
       <section>
         <h2>2. Provision of Services</h2>
-        <p>Golden Rewards reserves the right to modify or discontinue, temporarily or permanently, the services (or any part thereof) with or without notice. You agree that Golden Rewards shall not be liable to you or to any third party for any modification, suspension or discontinuance of the services.</p>
+        <p>Ihor Rewards reserves the right to modify or discontinue, temporarily or permanently, the services (or any part thereof) with or without notice. You agree that Ihor Rewards shall not be liable to you or to any third party for any modification, suspension or discontinuance of the services.</p>
       </section>
 
       <section>
@@ -26,12 +26,12 @@
 
       <section>
         <h2>5. Disclaimer of Warranties</h2>
-        <p>The services are provided on an "as is" and "as available" basis. Golden Rewards expressly disclaims all warranties of any kind, whether express or implied, including, but not limited to the implied warranties of merchantability, fitness for a particular purpose and non-infringement.</p>
+        <p>The services are provided on an "as is" and "as available" basis. Ihor Rewards expressly disclaims all warranties of any kind, whether express or implied, including, but not limited to the implied warranties of merchantability, fitness for a particular purpose and non-infringement.</p>
       </section>
 
       <section>
         <h2>6. Limitation of Liability</h2>
-        <p>In no event shall Golden Rewards be liable for any direct, indirect, incidental, special, consequential or exemplary damages, resulting from the use or the inability to use the service.</p>
+        <p>In no event shall Ihor Rewards be liable for any direct, indirect, incidental, special, consequential or exemplary damages, resulting from the use or the inability to use the service.</p>
       </section>
 
       <section>
@@ -50,7 +50,7 @@
 .legal-content {
   max-width: 800px;
   margin: 0 auto;
-  color: #ccc;
+  color: var(--text-color);
 }
 
 h1 {

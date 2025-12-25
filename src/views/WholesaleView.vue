@@ -63,8 +63,8 @@ p {
 
 input, textarea {
   width: 100%;
-  background: #111;
-  border: 1px solid #333;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid var(--border-color);
   padding: 1rem;
   color: #fff;
   border-radius: 4px;
@@ -79,7 +79,7 @@ input:focus, textarea:focus {
 .btn-primary {
   width: 100%;
   background: var(--primary-color);
-  color: #000;
+  color: #0f172a;
   border: none;
   padding: 1rem;
   font-weight: 700;

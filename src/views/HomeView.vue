@@ -2,7 +2,7 @@
   <div class="home">
     <section class="hero">
       <div class="container hero-content">
-        <h1>Exclusive Rewards for <span class="highlight">Golden</span> Partners</h1>
+        <h1>Exclusive Rewards for <span class="highlight">Ihor</span> Partners</h1>
         <p>Unlock premium wholesale pricing and exclusive catalog access.</p>
         <router-link to="/catalog" class="btn btn-primary">View Catalog</router-link>
       </div>
@@ -15,7 +15,7 @@
   height: 80vh;
   display: flex;
   align-items: center;
-  background: radial-gradient(circle at center, #1a1a1a 0%, #000 100%);
+  background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
   text-align: center;
 }
 
@@ -38,7 +38,7 @@
 
 .btn-primary {
   background: var(--primary-color);
-  color: #000;
+  color: #0f172a; /* Dark text for contrast on light blue */
   padding: 1rem 2.5rem;
   font-size: 1.1rem;
   text-decoration: none;
@@ -49,6 +49,6 @@
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(212, 175, 55, 0.4);
+  box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
 }
 </style>

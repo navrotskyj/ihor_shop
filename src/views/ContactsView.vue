@@ -68,7 +68,7 @@ h1 {
 
 .map-container {
   width: 100%;
-  border: 1px solid #222;
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 20px rgba(0,0,0,0.5);

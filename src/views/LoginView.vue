@@ -5,11 +5,11 @@
         <div class="tab" :class="{ active: isLogin }" @click="isLogin = true">Login</div>
         <div class="tab" :class="{ active: !isLogin }" @click="isLogin = false">Register</div>
       </div>
-      
+
       <div class="auth-content">
         <h2 v-if="isLogin">Welcome Back</h2>
-        <h2 v-else>Join Golden Rewards</h2>
-        
+        <h2 v-else>Join Ihor Rewards</h2>
+
         <form @submit.prevent>
           <div class="form-group" v-if="!isLogin">
              <input type="text" placeholder="Full Name">
@@ -38,22 +38,23 @@ const isLogin = ref(true);
   display: flex;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle at center, #1a1a1a 0%, #000 100%);
+  background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
 }
 
 .auth-card {
   width: 100%;
   max-width: 400px;
-  background: #0a0a0a;
-  border: 1px solid #222;
+  background: rgba(30, 41, 59, 0.7); /* Slate 800 with opacity */
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  backdrop-filter: blur(10px);
 }
 
 .tabs {
   display: flex;
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .tab {
@@ -67,7 +68,7 @@ const isLogin = ref(true);
 
 .tab.active {
   color: var(--primary-color);
-  background: #111;
+  background: rgba(15, 23, 42, 0.5);
   border-bottom: 2px solid var(--primary-color);
 }
 
@@ -88,8 +89,8 @@ h2 {
 input {
   width: 100%;
   padding: 1rem;
-  background: #111;
-  border: 1px solid #333;
+  background: rgba(15, 23, 42, 0.8);
+  border: 1px solid var(--border-color);
   color: #fff;
   border-radius: 4px;
 }
@@ -103,6 +104,7 @@ input:focus {
   width: 100%;
   padding: 1rem;
   background: var(--primary-color);
+  color: #0f172a;
   border: none;
   font-weight: 700;
   text-transform: uppercase;

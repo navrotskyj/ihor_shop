@@ -24,7 +24,7 @@
     <footer class="footer">
       <div class="container footer-content">
         <div class="footer-col">
-          <h3>GOLDEN REWARDS</h3>
+          <h3>IHOR REWARDS</h3>
           <p>Experience the premium standard in wholesale formatting.</p>
         </div>
         <div class="footer-col">
@@ -40,7 +40,7 @@
         </div>
       </div>
       <div class="container copyright">
-        &copy; 2025 Golden Rewards. All rights reserved.
+        &copy; 2025 Ihor Rewards. All rights reserved.
       </div>
     </footer>
   </div>
@@ -119,7 +119,7 @@
 
 .btn-outline:hover {
   background: var(--primary-color);
-  color: #000;
+  color: #0f172a;
 }
 
 .main-content {
@@ -127,7 +127,7 @@
 }
 
 .footer {
-  background: #0a0a0a;
+  background: rgba(2, 6, 23, 1); /* Slate 950 */
   padding: 4rem 0 2rem;
   border-top: 1px solid var(--border-color);
 }
@@ -168,6 +168,6 @@
   color: var(--text-muted);
   font-size: 0.8rem;
   padding-top: 2rem;
-  border-top: 1px solid #222;
+  border-top: 1px solid var(--border-color);
 }
 </style>

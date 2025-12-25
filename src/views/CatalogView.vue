@@ -13,7 +13,7 @@ const sortBy = ref('default');
 const items = ref([
   { id: 1, name: 'Royal Gold Watch', price: 1299.00, image: imgWatch },
   { id: 2, name: 'Diamond Studded Cufflinks', price: 450.00, image: imgCufflinks },
-  { id: 3, name: 'Golden Fountain Pen', price: 299.50, image: imgPen },
+  { id: 3, name: 'Ihor Fountain Pen', price: 299.50, image: imgPen },
   { id: 4, name: 'Premium Leather Briefcase', price: 850.00, image: null }, // Placeholder fallback
   { id: 5, name: 'Gold-Plated Sunglasses', price: 320.00, image: imgSunglasses },
   { id: 6, name: 'Luxury Card Holder', price: 150.00, image: null },
@@ -44,17 +44,17 @@ const sortedItems = computed(() => {
     <!-- Toolbar -->
     <div class="toolbar">
       <div class="view-options">
-        <button 
-          class="btn-icon" 
-          :class="{ active: viewMode === 'grid' }" 
+        <button
+          class="btn-icon"
+          :class="{ active: viewMode === 'grid' }"
           @click="viewMode = 'grid'"
           title="Grid View"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"></rect><rect x="14" y="3" width="7" height="7"></rect><rect x="14" y="14" width="7" height="7"></rect><rect x="3" y="14" width="7" height="7"></rect></svg>
         </button>
-        <button 
-          class="btn-icon" 
-          :class="{ active: viewMode === 'list' }" 
+        <button
+          class="btn-icon"
+          :class="{ active: viewMode === 'list' }"
           @click="viewMode = 'list'"
           title="List View"
         >
@@ -114,8 +114,8 @@ const sortedItems = computed(() => {
   align-items: center;
   margin-bottom: 2rem;
   padding: 1rem;
-  background: #111;
-  border: 1px solid #222;
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid var(--border-color);
   border-radius: 4px;
 }
 
@@ -143,8 +143,8 @@ const sortedItems = computed(() => {
 
 .btn-icon.active {
   color: var(--primary-color);
-  background: #222;
-  border-color: #333;
+  background: rgba(30, 41, 59, 0.8);
+  border-color: var(--border-color);
 }
 
 .sort-options {
@@ -159,9 +159,9 @@ const sortedItems = computed(() => {
 }
 
 select {
-  background: #000;
+  background: rgba(15, 23, 42, 0.8);
   color: #fff;
-  border: 1px solid #333;
+  border: 1px solid var(--border-color);
   padding: 0.5rem 2rem 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
@@ -187,8 +187,8 @@ select:focus {
 
 /* Grid View Card Styles */
 .grid .card {
-  background: #111;
-  border: 1px solid #222;
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s, border-color 0.3s;
@@ -203,7 +203,7 @@ select:focus {
 
 .grid .card-image {
   height: 250px;
-  background-color: #222;
+  background-color: var(--bg-color);
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -224,8 +224,8 @@ select:focus {
 /* List View Card Styles */
 .list .card {
   display: flex;
-  background: #111;
-  border: 1px solid #222;
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid var(--border-color);
   border-radius: 8px;
   overflow: hidden;
   transition: border-color 0.3s;
@@ -238,7 +238,7 @@ select:focus {
 .list .card-image {
   width: 250px;
   min-width: 250px;
-  background-color: #222;
+  background-color: var(--bg-color);
   background-size: cover;
   background-position: center;
 }
@@ -287,29 +287,29 @@ h3 {
 
 .btn-action:hover {
   background: var(--primary-color);
-  color: #000;
+  color: #0f172a;
 }
 
 @media (max-width: 768px) {
   .list .card {
     flex-direction: column;
   }
-  
+
   .list .card-image {
     width: 100%;
     height: 200px;
   }
-  
+
   .list .card-body {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .list .card-info {
     padding-right: 0;
     margin-bottom: 1rem;
   }
-  
+
   .toolbar {
     flex-direction: column;
     gap: 1rem;

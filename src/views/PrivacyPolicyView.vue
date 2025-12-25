@@ -6,7 +6,7 @@
 
       <section>
         <h2>1. Introduction</h2>
-        <p>Golden Rewards ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by Golden Rewards.</p>
+        <p>Ihor Rewards ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how your personal information is collected, used, and disclosed by Ihor Rewards.</p>
         <p>By accessing or using our Service, you signify that you have read, understood, and agree to our collection, storage, use, and disclosure of your personal information as described in this Privacy Policy and our Terms of Service.</p>
       </section>
 
@@ -49,7 +49,7 @@
         <h2>6. Your Rights (CCPA & GDPR)</h2>
         <p>Depending on your location, you may have rights regarding your personal data, including the right to access, correct, delete, or restrict use of your data. To exercise these rights, please contact us.</p>
       </section>
-      
+
       <section>
         <h2>7. Contact Us</h2>
         <p>If you have any questions about this Privacy Policy, please contact us at support@gmail.us.</p>
@@ -66,7 +66,7 @@
 .legal-content {
   max-width: 800px;
   margin: 0 auto;
-  color: #ccc;
+  color: var(--text-color);
 }
 
 h1 {
