@@ -1,18 +1,24 @@
 <script setup>
 import { ref, computed } from 'vue';
 
+// Import images
+import imgWatch from '../assets/images/gold_watch_1766654955253.png';
+import imgCufflinks from '../assets/images/cufflinks_1766654969702.png';
+import imgPen from '../assets/images/fountain_pen_1766654984581.png';
+import imgSunglasses from '../assets/images/sunglasses_1766654998405.png';
+
 const viewMode = ref('grid'); // 'grid' or 'list'
 const sortBy = ref('default');
 
 const items = ref([
-  { id: 1, name: 'Royal Gold Watch', price: 1299.00 },
-  { id: 2, name: 'Diamond Studded Cufflinks', price: 450.00 },
-  { id: 3, name: 'Golden Fountain Pen', price: 299.50 },
-  { id: 4, name: 'Premium Leather Briefcase', price: 850.00 },
-  { id: 5, name: 'Gold-Plated Sunglasses', price: 320.00 },
-  { id: 6, name: 'Luxury Card Holder', price: 150.00 },
-  { id: 7, name: 'Executive Desk Set', price: 550.00 },
-  { id: 8, name: 'Limited Edition Timepiece', price: 2500.00 },
+  { id: 1, name: 'Royal Gold Watch', price: 1299.00, image: imgWatch },
+  { id: 2, name: 'Diamond Studded Cufflinks', price: 450.00, image: imgCufflinks },
+  { id: 3, name: 'Golden Fountain Pen', price: 299.50, image: imgPen },
+  { id: 4, name: 'Premium Leather Briefcase', price: 850.00, image: null }, // Placeholder fallback
+  { id: 5, name: 'Gold-Plated Sunglasses', price: 320.00, image: imgSunglasses },
+  { id: 6, name: 'Luxury Card Holder', price: 150.00, image: null },
+  { id: 7, name: 'Executive Desk Set', price: 550.00, image: null },
+  { id: 8, name: 'Limited Edition Timepiece', price: 2500.00, image: null },
 ]);
 
 const sortedItems = computed(() => {
@@ -70,7 +76,7 @@ const sortedItems = computed(() => {
     <!-- Grid/List Display -->
     <div class="catalog-content" :class="viewMode">
       <div v-for="item in sortedItems" :key="item.id" class="card">
-        <div class="card-image"></div>
+        <div class="card-image" :style="item.image ? { backgroundImage: `url(${item.image})` } : {}"></div>
         <div class="card-body">
           <div class="card-info">
             <h3>{{ item.name }}</h3>
@@ -197,7 +203,9 @@ select:focus {
 
 .grid .card-image {
   height: 250px;
-  background: #222;
+  background-color: #222;
+  background-size: cover;
+  background-position: center;
   width: 100%;
 }
 
@@ -230,7 +238,9 @@ select:focus {
 .list .card-image {
   width: 250px;
   min-width: 250px;
-  background: #222;
+  background-color: #222;
+  background-size: cover;
+  background-position: center;
 }
 
 .list .card-body {

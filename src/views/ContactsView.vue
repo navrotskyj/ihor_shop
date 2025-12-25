@@ -7,12 +7,12 @@
         
         <div class="contact-item">
           <h3>Address</h3>
-          <p>123 Golden Street<br>New York, NY 10001</p>
+          <p>7901 4TH ST N STE 300<br>ST. PETERSBURG, FL 33702</p>
         </div>
         
         <div class="contact-item">
           <h3>Email</h3>
-          <p>support@goldenrewards.us</p>
+          <p>support@gmail.us</p>
         </div>
         
         <div class="contact-item">
@@ -21,8 +21,10 @@
         </div>
       </div>
       <div class="map">
-        <!-- Map Placeholder -->
-        <div class="map-placeholder">Map unavailable</div>
+        <!-- Map Image -->
+        <div class="map-container">
+          <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=7901%204TH%20ST%20N%20STE%20300%20ST.%20PETERSBURG,%20FL%2033702+()&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.mapsdirections.info/de/evolkerung-auf-einer-karte-berechnen/">Demografie Karte Deutschland</a></iframe>
+        </div>
       </div>
     </div>
   </div>
@@ -64,14 +66,18 @@ h1 {
   color: var(--text-muted);
 }
 
-.map-placeholder {
+.map-container {
   width: 100%;
-  height: 400px;
-  background: #111;
   border: 1px solid #222;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #444;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  line-height: 0;
+}
+
+.map-image {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 </style>

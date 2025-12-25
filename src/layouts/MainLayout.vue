@@ -3,7 +3,7 @@
     <header class="header">
       <div class="container header-content">
         <router-link to="/" class="brand">
-          <span class="brand-text">GOLDEN</span>REWARDS
+          <span class="brand-text">IHOR</span>REWARDS
         </router-link>
         <nav class="nav">
           <router-link to="/" class="nav-link">Home</router-link>
@@ -12,7 +12,7 @@
           <router-link to="/contacts" class="nav-link">Contacts</router-link>
         </nav>
         <div class="user-actions">
-           <router-link to="/login" class="btn btn-outline">Sign In</router-link>
+           <!-- <router-link to="/login" class="btn btn-outline">Sign In</router-link> -->
         </div>
       </div>
     </header>
@@ -35,8 +35,8 @@
         </div>
         <div class="footer-col">
           <h4>Legal</h4>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
+          <router-link to="/privacy-policy">Privacy Policy</router-link>
+          <router-link to="/terms">Terms of Service</router-link>
         </div>
       </div>
       <div class="container copyright">

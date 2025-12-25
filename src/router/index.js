@@ -4,6 +4,8 @@ import CatalogView from '../views/CatalogView.vue'
 import WholesaleView from '../views/WholesaleView.vue'
 import ContactsView from '../views/ContactsView.vue'
 import LoginView from '../views/LoginView.vue'
+import PrivacyPolicyView from '../views/PrivacyPolicyView.vue'
+import TermsView from '../views/TermsView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +34,16 @@ const router = createRouter({
       path: '/login',
       name: 'login',
       component: LoginView
+    },
+    {
+      path: '/privacy-policy',
+      name: 'privacy-policy',
+      component: PrivacyPolicyView
+    },
+    {
+      path: '/terms',
+      name: 'terms',
+      component: TermsView
     }
   ],
   scrollBehavior(to, from, savedPosition) {
